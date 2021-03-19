@@ -1,0 +1,5 @@
+alias gitsrc="cd /c/source"
+alias gitdev="cd /c/dev"
+alias go2src="cd /c/source"
+alias go2dev="cd /c/dev"
+alias gl5="git lg -5"

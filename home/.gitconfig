@@ -1,0 +1,56 @@
+# From dotfiles repo
+[push]
+	default = simple
+[user]
+# Handy way to include multiple emails depending on folder structure
+# https://www.kevinkuszyk.com/2018/12/10/git-tips-6-using-git-with-multiple-email-addresses/
+	email = Phil.Murwin@pointbsolutions.com
+	name = PhilMurwin
+[core]
+	autocrlf = true
+	editor = \"C:/Program Files/IDM Computer Solutions/UltraEdit/uedit64.exe\"
+[alias]
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	branches = branch -a
+	bro = checkout -b
+	co = checkout
+	fpush = push --force origin
+	lg = log --pretty=format:'%Cred%h %Cgreen%cd %C(yellow)%d %Creset%s %C(bold blue)<%an>%Creset' --abbrev-commit --date=short
+	po = push origin
+	rbc = rebase --continue
+	sl = !git lg -5
+	undo = rm --cached
+	unstage = reset HEAD --
+[log]
+	date = relative
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+[diff]
+	guitool = beyondcompare4
+[difftool "beyondcompare4"]
+	path = C:/Program Files/Beyond Compare 4/bcomp.exe
+	cmd = \"C:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[merge]
+	tool = BeyondCompare4
+	guitool = BeyondCompare4
+[mergetool "BeyondCompare4"]
+	path = C:/Program Files/Beyond Compare 4/bcomp.exe
+	cmd = \"C:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[mergetool]
+	prompt = false
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[difftool "sourcetree"]
+	cmd = 'C:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = 'C:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" -o \"$MERGED\"
+	trustExitCode = true

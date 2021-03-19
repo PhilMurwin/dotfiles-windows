@@ -1,0 +1,156 @@
+{
+    "final_space": true,
+    "osc99": false,
+    "console_title": false,
+    "console_title_style": "",
+    "console_title_template": "",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "diamond",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "foreground_templates": null,
+                    "background": "#340459",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+                {
+                    "type": "battery",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#193549",
+                    "foreground_templates": null,
+                    "background": "#f36943",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "battery_icon": "",
+                        "charged_color": "#4caf50",
+                        "charging_color": "#40c4ff",
+                        "color_background": true,
+                        "discharging_color": "#ff5722",
+                        "postfix": " "
+                    }
+                },
+                {
+                    "type": "spotify",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#ffffff",
+                    "background": "#1BD760",
+                    "properties": {
+                      "prefix": "\uF9C6 ",
+                      "playing_icon": "\uE602 ",
+                      "paused_icon": "\uF8E3 ",
+                      "stopped_icon": "\uF04D ",
+                      "track_separator" : " - "
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "foreground_templates": null,
+                    "background": "#0C3593",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "prefix": "  ",
+                        "style": "folder"
+                    }
+                },
+                {
+                    "type": "dotnet",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#FFFFFF",
+                    "background": "#190262",
+                    "properties": {
+                      "prefix": " \uE70C ",
+                      "display_version": false
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#02121E",
+                    "foreground_templates": null,
+                    "background": "#009D00",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "display_stash_count": true,
+                        "display_upstream_icon": true,
+                        "status_colors_enabled": true,
+                        "local_changes_color": "#E4E002",
+                        "staging_color": "#900057"                    }
+                },
+                {
+                    "type": "node",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "foreground_templates": null,
+                    "background": "#6CA35E",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "prefix": "  "
+                    }
+                },
+                {
+                    "type": "root",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#193549",
+                    "foreground_templates": null,
+                    "background": "#ffff66",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+                {
+                    "type": "exit",
+                    "style": "diamond",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "foreground_templates": null,
+                    "background": "#2e9599",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "always_enabled": false,
+                        "color_background": true,
+                        "display_exit_code": false,
+                        "error_color": "#f1184c",
+                        "prefix": "\u003ctransparent\u003e\u003c/\u003e "
+                    }
+                }
+            ]
+        }
+    ]
+}
